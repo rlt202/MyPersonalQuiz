@@ -196,7 +196,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ib1-Ej-Gu3">
                                 <rect key="frame" x="16" y="228" width="288" height="112.5"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uge-nC-Uvc">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="Uge-nC-Uvc">
                                         <rect key="frame" x="-2" y="0.0" width="292" height="31"/>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="5cn-YX-mfo">
@@ -302,16 +302,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6q4-ni-rWv">
-                                <rect key="frame" x="16" y="209.5" width="288" height="149.5"/>
+                                <rect key="frame" x="16" y="223" width="288" height="122"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐶!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNK-dm-Cb6">
-                                        <rect key="frame" x="57" y="0.0" width="174.5" height="60"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <rect key="frame" x="95.5" y="0.0" width="97" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вам нравится быть с друзьями. Вы окружаете себя людьми, которые вам нравятся и всегда готовы помочь." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqD-x2-g5v">
-                                        <rect key="frame" x="2.5" y="68" width="283" height="81.5"/>
+                                        <rect key="frame" x="2.5" y="40.5" width="283" height="81.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

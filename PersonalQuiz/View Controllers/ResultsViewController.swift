@@ -43,6 +43,7 @@ class ResultsViewController: UIViewController {
         }
         guard
             let preferAnimalIs = sortedTypes.first?.key else {
+            
             return
             
         }
