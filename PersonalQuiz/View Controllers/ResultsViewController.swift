@@ -27,11 +27,9 @@ class ResultsViewController: UIViewController {
     }
     
     private func getYourResult() {
+        
         var typeAndCount: [AnimalType: Int] = [:]
-        let typesOfAnimal = typeOfAnswers.map {
-            $0.type
-            
-        }
+        let typesOfAnimal = typeOfAnswers.compactMap {$0.type}
         
         for animal in typesOfAnimal {
             typeAndCount[animal] = (typeAndCount[animal] ?? 0) + 1
@@ -39,13 +37,11 @@ class ResultsViewController: UIViewController {
         
         let sortedTypes = typeAndCount.sorted {
             $0.value > $1.value
-            
         }
         guard
             let preferAnimalIs = sortedTypes.first?.key else {
             
             return
-            
         }
         
         showResult(with: preferAnimalIs)
