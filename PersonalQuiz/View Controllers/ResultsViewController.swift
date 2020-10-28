@@ -12,13 +12,13 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var yourAnimalLabel: UILabel!
     @IBOutlet weak var yourDescription: UILabel!
     
-    var typeOfAnswers: [Answer]!
+    var typeOfAnswers: [Answer]  = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.hidesBackButton = true
-        getYourResult()
+        findPreferAnimal()
     }
 
     private func showResult(with animal: AnimalType) {
@@ -26,7 +26,7 @@ class ResultsViewController: UIViewController {
         yourDescription.text = "\(animal.definition)"
     }
     
-    private func getYourResult() {
+    private func findPreferAnimal() {
         
         var typeAndCount: [AnimalType: Int] = [:]
         let typesOfAnimal = typeOfAnswers.compactMap {$0.type}
